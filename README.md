@@ -5,6 +5,8 @@ The chronological order of the files for training the model is as follows: `crea
 ### 'Train' folder
 The `train` folder contains several legacy train files used in the initial stages of development to establish what training format the model would perform with best. I did not remove those files after settling on the final format; an interested reader may try to train the models with the older training format and compare the results. The code in `model_training.ipynb` is not dependent on the format of the training files (some of them may have numerical values instead of text labels for classes, however; and in that case minor tweaks to the code structure may be in order for it to run correctly).
 
+The final training files that were used to train the models are named `split_train_{lexical/gram/disc}_eo.pickle` for the three smaller models, and `split_train_eo.pickle` for the general model.
+
 ### 'Data' folder
 The `data` folder contains .xlsx files created in `statistics_1.ipynb` and `statistics_2.ipynb`.
 
