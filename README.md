@@ -40,10 +40,11 @@ lexical = TextClassificationPipeline(
 ### Prediction
 Mind that the models were trained on the data in the format of `error → correction`. Predictions on data of any other format may be ... unpredictable.
 
-To predict the tag for the error, simply input the error as an argument to the TextClassificationPipeline object:
+To predict the tag for the error using a single model, simply input the error as an argument to the TextClassificationPipeline object:
 
 ```
 >>> discourse("can't → cannot")
 
 [{'label': 'Inappropriate_register', 'score': 0.9809362888336182}]
 ```
+To predict the tags for a dataset, see the `predict.ipynb` pipeline.
